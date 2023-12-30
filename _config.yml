@@ -23,7 +23,7 @@ name                     : &name  "Eduardo F.S."
 description              : &description "A Personal Tutorial Blog."
 url                      : "https://EduSovrani.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "EduSovrani" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "EduSovrani/EduSovrani.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/logo_pem_black.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo_pem.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "POWER ELECTRONICS MAKER" # overrides the website title displayed in the masthead, use " " for no title
