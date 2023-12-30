@@ -57,7 +57,7 @@ reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
-  path                   : https://feeds.feedburner.com/edusovrani/47O8mibpBnz # blank (default) uses feed.xml
+  path                   : "https://feeds.feedburner.com/edusovrani/47O8mibpBnz" # blank (default) uses feed.xml
   hide                   : # true, false (default)
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
