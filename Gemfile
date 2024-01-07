@@ -23,7 +23,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 # Cf. https://jekyllrb.com/docs/plugins/installation/
 group :jekyll_plugins do
   gem "jekyll-archives"
-  gem "jekyll-paginate"
+  gem "jekyll-paginate-v2"
   gem "jekyll-sitemap"
   gem "jekyll-gist"
   gem "jekyll-feed"

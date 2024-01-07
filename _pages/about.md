@@ -2,10 +2,12 @@
 layout: single
 permalink: /about/
 title: "About"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 last_modified_at: 2023-12-27T09:37:00-03:00
 toc: true
 author_profile: true
+header:
+    overlay_image: /assets/images/head/head.jpg
+    overlay_filter: 0.5
 ---
 
 Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.

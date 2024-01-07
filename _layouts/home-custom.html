@@ -1,0 +1,48 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+<!-- Seção para o post em destaque -->
+{% if posts.size > 0 %}
+  {% assign featured_post = posts.first %}
+  <div class="featured-post">
+    <div class="featured-image" style="float:left; width:50%;">
+      <a href="{{ featured_post.url | relative_url }}">
+        <img src="{{ teaser | relative_url }}" alt="">
+      </a>
+    </div>
+    <div class="featured-content" style="float:right; width:50%;">
+      <h2><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a></h2>
+      <p>{{ featured_post.date | date: '%B %d, %Y' }}</p>
+      <p>Tempo de leitura: {{ featured_post.reading_time }}</p>
+      <p>{{ featured_post.excerpt | strip_html | truncatewords: 20 }}</p>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+{% endif %}
+
+<!-- Grid de posts -->
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
+
+{% include paginator.html %}

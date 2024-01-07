@@ -80,6 +80,7 @@ body {
   & + .page__meta {
     margin-top: -0.5em;
   }
+
 }
 
 .page__lead {
@@ -108,6 +109,7 @@ body {
 		&:hover .header-link {
 			opacity: 1;
 		}
+
 	}
 
   p,
@@ -188,7 +190,7 @@ body {
   &--overlay {
     position: relative;
     margin-bottom: 2em;
-    padding: 3em 0;
+    padding: 1em 0;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,7 +218,7 @@ body {
     .page__lead,
     .btn {
       color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      text-shadow: 3px 3px 4px rgba(#000, 0.8);
     }
 
     .page__lead {
@@ -247,11 +249,13 @@ body {
   padding: 2px 5px;
   color: #fff;
   font-family: $caption-font-family;
-  font-size: $type-size-7;
+  // font-size: $type-size-7;
+  font-size: 0.6em;
   background: #000;
   text-align: right;
   z-index: 5;
-  opacity: 0.5;
+  // opacity: 0.5;
+  opacity: 0.4;
   border-radius: $border-radius 0 0 0;
 
   @include breakpoint($large) {
